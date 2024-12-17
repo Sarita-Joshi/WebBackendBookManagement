@@ -11,7 +11,7 @@ from pydantic import BaseModel, Field
 SECRET_KEY = "my_secret_key_1234" 
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 120 
-DATABASE_URL = "mysql+mysqlconnector://root:admin@127.0.0.1:3306/book_db"  # MySQL database connection URL
+DATABASE_URL = "mysql+mysqlconnector://<user>:<pwd>@127.0.0.1:3306/<book_db>"  # MySQL database connection URL
 
 # Database setup
 engine = create_engine(DATABASE_URL)  # Create database engine
